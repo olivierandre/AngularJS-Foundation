@@ -2,13 +2,13 @@ Project AngularJS + Foundation
 ====================
 
 Create with Yeoman.
-    -   HTML5
-    -   CSS3
-        -   Framework 'Foundation'
-    -   Javascript
-        -   AngularJS
-    -   BDD
-        -   MongoDB
+- HTML5
+- CSS3
+ - Framework 'Foundation'
+-   Javascript
+ -   AngularJS
+-   BDD
+ -   MongoDB
 
 ### node_modules
 ```
