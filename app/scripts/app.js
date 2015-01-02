@@ -1,27 +1,13 @@
-'use strict';
+(function() {
+  'use strict';
 
-/**
- * @ngdoc overview
- * @name coffeeApp
- * @description
- * # coffeeApp
- *
- * Main module of the application.
- */
-angular
-  .module('coffeeApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  var app = angular.module('coffeeApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'coffeeServices', 'mm.foundation']);
+
+  app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -30,4 +16,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
   });
+
+}());

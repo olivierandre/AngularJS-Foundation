@@ -1,23 +1,30 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#/">My Site</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#/"><span>Menu</span></a></li>
+  </ul>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#/">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#/">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#/">First link in dropdown</a></li>
+          <li class="active"><a href="#/">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#/">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+<a class="button" ng-click="open()" ng-model="name">Bouton par défaut</a>
